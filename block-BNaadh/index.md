@@ -9,7 +9,7 @@ Q. write express generator command with varying options to generate express app 
   express --no-view sample
 
 - express app with gitignore
-  express --view sample
+  express --git sample
 
 - express app with sass support for styling.
   express --css sass sample
