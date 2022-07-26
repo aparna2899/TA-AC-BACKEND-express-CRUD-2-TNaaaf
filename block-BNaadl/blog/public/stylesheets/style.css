@@ -1,8 +1,231 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-50 {
+  flex: 0 1 50%;
+}
+h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: rgb(0, 204, 255);
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+span {
+  font-size: 1.2rem;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+.btn {
+  background-color: orange;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  color: white;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+  cursor: pointer;
+}
+
+.btn2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: orange;
+  color: white;
+  border-radius: 4px;
+}
+
+header {
+  background-color: rgb(0, 204, 255);
+  padding: 0.5rem 3rem;
+}
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.hero {
+  margin-top: 8rem;
+}
+form {
+  width: 30%;
+  border: 4px solid rgb(0, 204, 255);
+  margin: 3rem auto;
+}
+.form-control {
+  display: block;
+  width: 80%;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
