@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <title>Add Author Form</title>
+  </head>
+  <body class="center">
+    <header class="flex">
+      <div class="flex-50 left"></div>
+      <div class="flex-50 right">
+        <a href="/" class="btn">Back</a>
+      </div>
+    </header>
+    <h1>Add Author</h1>
+    <form action="/authors" method="POST" class="form">
+      <input type="text" name="name" placeholder="Name" class="form-control" />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        class="form-control"
+      />
+      <input
+        type="text"
+        name="country"
+        placeholder="Country"
+        class="form-control"
+      />
+      <input
+        type="text"
+        name="author_image"
+        placeholder="Author image url"
+        class="form-control"
+      />
+      <input type="submit" value="Submit" class="btn btn2" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Edit Book Details</title>
+  </head>
+  <body class="center">
+    <header class="flex">
+      <div class="flex-50 left">
+        <a href="/" class="logo">Home</a>
+      </div>
+      <div class="flex-50 right">
+        <a href="/articles/<%= book.id %>" class="btn">Back</a>
+      </div>
+    </header>
+    <h1>Edit Book Details</h1>
+    <form action="/books/<%= book.id %>" method="POST" class="form">
+      <input
+        type="text"
+        name="title"
+        placeholder="Title"
+        value="<%= book.title %>"
+        class="form-control"
+      />
+      <textarea
+        name="summary"
+        rows="6"
+        placeholder="Summary"
+        class="form-control"
+      >
+        <%= book.summary %>
+        </textarea
+      >
+      <input
+        type="number"
+        name="pages"
+        placeholder="Pages"
+        value="<%=book.pages%>"
+        class="form-control"
+      />
+      <input
+        type="text"
+        name="publication"
+        placeholder="Publication"
+        value="<%=book.publication%>"
+        class="form-control"
+      />
+      <input
+        type="text"
+        name="category"
+        placeholder="Category"
+        value="<%= book.category %>"
+        class="form-control"
+      />
+      <input
+        type="text"
+        name="author"
+        placeholder="Author"
+        value="<%= book.author %>"
+        class="form-control"
+      />
+      <input
+        type="text"
+        name="cover_image"
+        placeholder="Cover image url"
+        value="<%= book.cover_image %>"
+        class="form-control"
+      />
+      <input type="submit" value="Submit" class="btn btn2" />
+    </form>
+  </body>
+</html>

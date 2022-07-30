@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <title>Book Detail</title>
+  </head>
+  <body>
+    <header class="flex">
+      <div class="flex-50 left">
+        <a href="/" class="logo">Home</a>
+      </div>
+      <div class="flex-50 right">
+        <a href="/books" class="btn">Back</a>
+      </div>
+    </header>
+    <div class="container">
+      <h2><%= book.title %></h2>
+      <img src="<%= book.cover_image%>" alt="book cover" />
+      <a href="/authors/<%=book.author%>"><h3><%=book.author%></h3></a>
+      <% categories.forEach(c => { %>
+      <a href=""><span><%= c%></span></a>
+      <% }) %>
+      <hr />
+      <p><b>Summary :</b> <%= book.summary %></p>
+      <hr />
+      <p><b>Pages :</b> <%= book.pages %></p>
+      <p><b>Published By : </b><%= book.publication %></p>
+      <div class="flex">
+        <a href="/books/<%= book.id %>/edit" class="btn btn2">Edit</a>
+        <a href="/books/<%= book.id %>/delete" class="btn btn2">Delete</a>
+      </div>
+    </div>
+  </body>
+</html>
