@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+
+    <title>Author Detail</title>
+  </head>
+  <body>
+    <header class="flex">
+      <div class="flex-50 left">
+        <a href="/" class="logo">Home</a>
+      </div>
+      <div class="flex-50 right">
+        <a href="/books" class="btn">Back</a>
+      </div>
+    </header>
+    <div class="container center">
+      <img src="<%= author[0].author_image %>" alt="<%= author.name %>" />
+      <div class="box">
+        <div class="div flex">
+          <p class="flex-50">Name</p>
+          <p class="flex-50"><%= author[0].name %></p>
+        </div>
+        <hr />
+        <div class="div flex">
+          <p class="flex-50">Email</p>
+          <p class="flex-50"><%= author[0].email %></p>
+        </div>
+        <hr />
+        <div class="div flex">
+          <p class="flex-50">Country</p>
+          <p class="flex-50"><%= author[0].country %></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
